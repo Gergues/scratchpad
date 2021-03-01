@@ -1,23 +1,18 @@
-#!/bin/bash
-
 # This script installs the pip3  installers for Python. 
 # Assumes Python3 is enabled and installed by the OS , invokable as python3 from path
 sudo apt install python3-pip
 
 
-##!/bin/bash
 # This script installs the azure cli  
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash > cli.log
 
 
-##!/bin/bash
 # This script installs the azure-cli ml extension 
 
 #Adding the AzureML CLI extension install 
 az config set extension.use_dynamic_install=yes_without_prompt > azml_log.log
 az extension add --name azure-cli-ml > azml_log.log
 
-##!/bin/bash
 # This script installs the required AzureML libraries needed for the build agent
 
 pip3 install setuptools > az_libs_log.log
