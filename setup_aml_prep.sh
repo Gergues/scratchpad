@@ -20,7 +20,7 @@ pip3 install -U pip  > az_libs_log.log
 pip3 install requests  > az_libs_log.log
 pip3 install azureml-core  > az_libs_log.log
 pip3 install azureml-sdk > az_libs_log.log
-pip3 install azureml-pipline > az_libs_log.log
+pip3 install azureml-pipeline > az_libs_log.log
 pip3 install joblib > az_libs_log.log
 pip3 install adal > az_libs_log.log
 pip3 install scipy > az_libs_log.log
